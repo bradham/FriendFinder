@@ -19,8 +19,7 @@ var PORT = process.env.PORT || 8080;
 require("./app/routing/htmlRoutes.js")(app);
 require("./app/routing/apiRoutes.js")(app);
 
-
-// Sets up the Express app to handle data parsing
+// Sets up the Express app to handle data parsing.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
